@@ -1,12 +1,40 @@
-Start with Next.js install
+Visit NPR - they have a Redux store
+Visit my portfolio website - show a smaller store
+
+# Why use Redux?
+
+Global Store - everything and anything can access it, ie, a database for your frontend
+Avoid props drilling
+
+You are going to get asked about it in your React interviews
+
+# Warning - Redux has a ton of moving parts
+
+It's complicated. It's okay to feel overwhelmed. Even I don't know everything.
+
+# Start with Next.js install
 
 ```
 npx create-next-app
 ```
 
+Craete React App is too simple these days - you want to use something more powerful out of the box.
+
 Defaults are fine. Comes with Typescript right out of the box, which is superrr nice! And a .gitignore.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# make a shopping cart
+
+after all, a shopping cart is _probably_ going to be needed to be 'seen' everywhere, so it's a great first case.
+
+# What goes in the Redux store?
+
+Everything? NO.
+
+Use context API for small needs. Even some props drilling is okay.
+
+Devs can complain about Redux when the store gets too big - so be mindful of that.
+
+=================================
 
 ## Getting Started
 
