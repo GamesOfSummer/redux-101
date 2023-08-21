@@ -26,6 +26,10 @@ Defaults are fine. Comes with Typescript right out of the box, which is superrr 
 
 after all, a shopping cart is _probably_ going to be needed to be 'seen' everywhere, so it's a great first case.
 
+# make two store fronts in Next.JS
+
+As simple as possible, no stress
+
 # What goes in the Redux store?
 
 Everything? NO.
