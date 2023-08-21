@@ -1,9 +1,19 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { addToCart } from "../StoreSlice";
+import { useAppDispatch } from "@/hooks";
 
 function StoreFront1() {
-  function handleClick() {}
+  const dispatch = useAppDispatch();
+
+  function handleClick() {
+    dispatch(
+      addToCart({
+        id,
+        quantity: count,
+      })
+    );
+  }
 
   return (
     <div>

@@ -3,10 +3,11 @@ Visit my portfolio website - show a smaller store
 
 # Why use Redux?
 
-Global Store - everything and anything can access it, ie, a database for your frontend
-Avoid props drilling
+- Global Store - everything and anything can access it, ie, a database for your frontend
+- Avoid props drilling
+- The tooling is AMAZINGGGGGGGGGGGGGGGGGGGGGGGG
 
-You are going to get asked about it in your React interviews
+- You are going to get asked about it in your React interviews 🙃
 
 # Warning - Redux has a ton of moving parts
 
@@ -37,6 +38,18 @@ Everything? NO.
 Use context API for small needs. Even some props drilling is okay.
 
 Devs can complain about Redux when the store gets too big - so be mindful of that.
+
+# Using Redux Toolkit
+
+https://redux.js.org/introduction/getting-started
+
+https://redux-toolkit.js.org/introduction/getting-started
+
+Redux is still a complicated mess at times, but RTK reduces that pain.
+
+https://redux-toolkit.js.org/tutorials/quick-start
+
+Is perfect to follow through~
 
 =================================
 
