@@ -1,3 +1,11 @@
+# Who am I
+
+I've been doing this a while
+I don't know everything - I leave my ego at the door. You defo know something I don't in this JS ecosystem.
+ASK QUESTIONS WHENEVER
+
+# TO start - Redux in the wild
+
 Visit NPR - they have a Redux store
 Visit my portfolio website - show a smaller store
 
