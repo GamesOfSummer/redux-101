@@ -18,7 +18,7 @@ export const storeSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
-    addToCart: (state, action: PayloadAction<number>) => {
+    addToCart: (state, action: PayloadAction<any>) => {
       state.cart.push({ name: "Dummy Item", quantity: 1 });
     },
   },

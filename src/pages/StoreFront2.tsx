@@ -8,12 +8,12 @@ function StoreFront2() {
   const dispatch = useAppDispatch();
 
   function handleClick() {
-    // dispatch(
-    //   addToCart({
-    //     id,
-    //     quantity: count,
-    //   })
-    // );
+    dispatch(
+      addToCart({
+        id: 2,
+        quantity: 2,
+      })
+    );
   }
 
   return (

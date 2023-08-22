@@ -7,12 +7,12 @@ function StoreFront1() {
   const dispatch = useAppDispatch();
 
   function handleClick() {
-    // dispatch(
-    //   addToCart({
-    //     id,
-    //     quantity: count,
-    //   })
-    // );
+    dispatch(
+      addToCart({
+        id: 1,
+        quantity: 1,
+      })
+    );
   }
 
   return (
