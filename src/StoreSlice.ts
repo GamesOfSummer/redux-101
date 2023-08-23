@@ -27,10 +27,9 @@ export const storeSlice = createSlice({
     },
 
     addToCartMerge: (state, action: PayloadAction<{ name: string }>) => {
-      console.log(action);
-      const todo = state.cart.find((todo) => todo.name === action.payload.name);
-      if (todo) {
-        todo.quantity++;
+      const item = state.cart.find((item) => item.name === action.payload.name);
+      if (item) {
+        item.quantity++;
       } else {
         state.cart.push({ name: action.payload.name, quantity: 1 });
       }
