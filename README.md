@@ -8,7 +8,7 @@ ASK QUESTIONS WHENEVER
 # TO start - Redux in the wild
 
 Redux is still being used
-Visit NPR - they have a Redux store
+Visit Reddit/NPR - they have a Redux store
 Visit my portfolio website - show a smaller store
 
 # Why use Redux?
@@ -58,6 +58,10 @@ https://redux-toolkit.js.org/tutorials/quick-start
 Is perfect to follow through~
 
 =================================
+
+# Wth is a reducer
+
+Reducers are functions that take the current state and an action as arguments, and return a new state result. In other words, (state, action) => newState.
 
 ## Getting Started
 

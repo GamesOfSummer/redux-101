@@ -1,7 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 import { Provider } from "react-redux";
 
@@ -12,7 +11,10 @@ import StoreFront2 from "./pages/StoreFront2";
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <div className="App">test</div>
+      <div className="App">Store Front</div>
+      <Link to="/StoreFront1">Go to Store Front 1</Link>
+      <br />
+      <Link to="/StoreFront2">Go to Store Front 2</Link>
 
       <Routes>
         <Route path="StoreFront1" element={<StoreFront1 />} />

@@ -15,15 +15,23 @@ const initialState: StoreState = {
 };
 
 export const storeSlice = createSlice({
-  name: "counter",
+  name: "store",
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<any>) => {
       state.cart.push({ name: "Dummy Item", quantity: 1 });
     },
+
+    addToCartMerge: (state, action: PayloadAction<any>) => {
+      console.log(action);
+      const todo = state.cart.find((todo) => todo.name === action.payload);
+      if (todo) {
+        todo.quantity++;
+      }
+    },
   },
 });
 
-export const { addToCart } = storeSlice.actions;
+export const { addToCart, addToCartMerge } = storeSlice.actions;
 
 export default storeSlice.reducer;
