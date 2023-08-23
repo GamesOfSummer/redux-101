@@ -9,8 +9,7 @@ function StoreFront1() {
   function handleClick() {
     dispatch(
       addToCart({
-        id: 1,
-        quantity: 1,
+        name: "Item 1",
       })
     );
   }
@@ -18,14 +17,14 @@ function StoreFront1() {
   function handleClickMerge() {
     dispatch(
       addToCartMerge({
-        id: 1,
-        quantity: 1,
+        name: "Item 1",
       })
     );
   }
 
   return (
     <div>
+      <hr></hr>
       <h1>Store 1</h1>
       <Link to="/StoreFront2">Go to Store Front 2</Link>
       <br />

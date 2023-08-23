@@ -1,5 +1,8 @@
 # Who am I
 
+https://www.linkedin.com/in/summertime/
+https://github.com/GamesOfSummer
+
 I've been doing this a while
 I don't know everything - I leave my ego at the door. You defo know something I don't in this JS ecosystem.
 Follow me on LinkedIn! Always happy to offer a few minutes or answer a question to anything.

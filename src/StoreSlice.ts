@@ -14,19 +14,25 @@ const initialState: StoreState = {
   cart: [],
 };
 
+export interface Payload {
+  cart: Array<Item>;
+}
+
 export const storeSlice = createSlice({
   name: "store",
   initialState,
   reducers: {
-    addToCart: (state, action: PayloadAction<any>) => {
-      state.cart.push({ name: "Dummy Item", quantity: 1 });
+    addToCart: (state, action: PayloadAction<{ name: string }>) => {
+      state.cart.push({ name: action.payload.name, quantity: 1 });
     },
 
-    addToCartMerge: (state, action: PayloadAction<any>) => {
+    addToCartMerge: (state, action: PayloadAction<{ name: string }>) => {
       console.log(action);
-      const todo = state.cart.find((todo) => todo.name === action.payload);
+      const todo = state.cart.find((todo) => todo.name === action.payload.name);
       if (todo) {
         todo.quantity++;
+      } else {
+        state.cart.push({ name: action.payload.name, quantity: 1 });
       }
     },
   },
