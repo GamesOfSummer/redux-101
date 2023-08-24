@@ -1,6 +1,6 @@
 import React from "react";
 
-import { addToCart } from "../StoreSlice";
+import { addToCart } from "../CartSlice";
 import { useAppDispatch } from "../hooks";
 
 function StoreFront2() {

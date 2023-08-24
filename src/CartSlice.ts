@@ -6,20 +6,16 @@ interface Item {
   quantity: number;
 }
 
-export interface StoreState {
+export interface CartState {
   cart: Array<Item>;
 }
 
-const initialState: StoreState = {
+const initialState: CartState = {
   cart: [],
 };
 
-export interface Payload {
-  cart: Array<Item>;
-}
-
-export const storeSlice = createSlice({
-  name: "store",
+export const cartSlice = createSlice({
+  name: "cart",
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<{ name: string }>) => {
@@ -37,6 +33,6 @@ export const storeSlice = createSlice({
   },
 });
 
-export const { addToCart, addToCartMerge } = storeSlice.actions;
+export const { addToCart, addToCartMerge } = cartSlice.actions;
 
-export default storeSlice.reducer;
+export default cartSlice.reducer;

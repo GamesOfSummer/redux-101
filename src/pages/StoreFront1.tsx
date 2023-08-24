@@ -1,5 +1,5 @@
 import React from "react";
-import { addToCart, addToCartMerge } from "../StoreSlice";
+import { addToCart, addToCartMerge } from "../CartSlice";
 import { useAppDispatch } from "../hooks";
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,6 @@ function StoreFront1() {
     <div>
       <hr></hr>
       <h1>Store 1</h1>
-      <Link to="/StoreFront2">Go to Store Front 2</Link>
       <br />
       <button onClick={handleClick}>Add Item 1</button>
       <br />
