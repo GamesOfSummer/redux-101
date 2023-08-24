@@ -10,9 +10,13 @@ ASK QUESTIONS WHENEVER
 
 # TO start - Redux in the wild
 
-Redux is still being used
-Visit Reddit/NPR - they have a Redux store
+I am going to assume you know React, JS, Typescript
+
 Visit my portfolio website - show a smaller store
+Shopping cart, user info, dark mode
+Redux is still being used
+
+Visit Reddit/NPR - they have a Redux store
 
 # Why use Redux?
 
@@ -25,6 +29,8 @@ Visit my portfolio website - show a smaller store
 # Warning - Redux has a ton of moving parts
 
 It's complicated. It's okay to feel overwhelmed. Even I don't know everything.
+
+History - mutating was awful, now we are better with Redux Toolkit
 
 # Start with CRA install
 
